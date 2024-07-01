@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="payment">
+      <div class="payment-logo">
+        <p>p</p>
+      </div>
+
+
+      <h2>Payment</h2>
+      <form action="con1.php" method="post" enctype="multipart/form-data">
+        <div class="form">
+          <div class="card space icon-relative">
+            <label class="label">Card holder:</label>
+            <input type="text" class="input" placeholder="Coding Market" name="cardHolder">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="card space icon-relative">
+            <label class="label">Card number:</label>
+            <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number"
+              name="cardNumber">
+            <i class="far fa-credit-card"></i>
+          </div>
+          <div class="card-grp space">
+            <div class="card-item icon-relative">
+              <label class="label">Expiry date:</label>
+              <input type="text" class="input" placeholder="00 / 00" name="ExpDate">
+              <i class="far fa-calendar-alt"></i>
+            </div>
+            <div class="card-item icon-relative">
+              <label class="label">CVC:</label>
+              <input type="text" class="input" data-mask="000" placeholder="000" name="cvc">
+              <i class="fas fa-lock"></i>
+            </div>
+          </div>
+
+          <button class="btn" type="submit" name="submit">
+            Pay
+          </button>
+      </form>
+
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
